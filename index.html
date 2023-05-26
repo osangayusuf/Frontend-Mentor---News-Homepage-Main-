@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="css/style.css">
+
+  <title>Frontend Mentor | News homepage</title>
+</head>
+<body class="font-inter">
+
+  <!-- * Wrapping div -->
+  <div class="w-[93%] m-auto desktop:w-4/5" id="main">
+
+    <!-- * Navigation bar -->
+    <div class="grid grid-cols-2 grid-flow-col items-center pt-10 pb-5">
+      <img src="/assets/images/logo.svg" alt="news logo" >
+      <nav class="hidden desktop:block justify-self-end text-darkgrayishblue text-xl">
+        <ul class="list-none">
+          <li class="inline pl-5"><a href="#" class="hover:text-softred">New</a></li>
+          <li class="inline pl-5"><a href="#" class="hover:text-softred">Popular</a></li>
+          <li class="inline pl-5"><a href="#" class="hover:text-softred">Trending</a></li>
+          <li class="inline pl-5"><a href="#" class="hover:text-softred">Home</a></li>
+          <li class="inline pl-5"><a href="#" class="hover:text-softred">Categories</a></li>
+        </ul>
+      </nav>
+      <button class="desktop:hidden justify-self-end" onclick="menuOpen(this)">
+        <img src="/assets/images/icon-menu.svg" alt="">
+      </button>
+      </div>
+    <!-- * End navigation bar -->
+    
+    <!-- * Main section -->
+    <div class="my-12 desktop:grid grid-cols-3 grid-rows-2 gap-5">
+      <!-- * Hero section -->
+      <div class="mt-5 desktop:m-0 col-span-2 row-span-2">
+        <img src="/assets/images/image-web-3-mobile.jpg" alt="" class="w-full desktop:hidden">
+        <img src="/assets/images/image-web-3-desktop.jpg" alt="" class="w-full hidden desktop:block">
+        <div class="desktop:flex pt-8 gap-5">
+          <h1 class="text-6xl desktop:text-7xl font-extrabold mb-5 flex-1">
+            The Bright Future of Web 3.0?
+          </h1>
+          <div class="flex-1">
+            <p class="text-xl mb-10  desktop:mb-16 text-darkgrayishblue leading-relaxed">
+              We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. 
+              But is it really fulfilling its promise?
+            </p>
+            <a href="" class="uppercase tracking-[0.2em] bg-softred text-offwhite text-lg font-bold px-12 py-4 hover:bg-darkblue">
+              Read more
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- * End hero section -->
+
+      <!-- * News section 1 -->
+      <div class="bg-darkblue text-offwhite my-20 p-6 desktop:p-8 row-span-2 desktop:m-0">
+        <h1 class="text-softorange text-3xl desktop:text-5xl desktop:my-3 font-bold pb-6">
+          New 
+        </h1>
+        <h2 class="text-2xl font-bold hover:text-softorange my-1.5 tracking-wide">
+          <a href="#">
+            Hydrogen VS Electric Cars
+          </a>
+        </h2>
+        <p class="text-grayishblue text-lg pb-8 border-b border-b-darkgrayishblue leading-9">
+          Will hydrogen-fueled cars ever catch up to EVs?
+        </p>
+        <h2 class="text-2xl font-bold hover:text-softorange mt-8 mb-2 tracking-wide">
+          <a href="#">
+            The Downsides of AI Artistry
+          </a>
+        </h2>
+        <p class="text-grayishblue text-lg pb-8 border-b border-b-darkgrayishblue leading-9">
+          What are the possible adverse effects of on-demand AI image generation?
+        </p>
+        <h2 class="text-2xl font-bold hover:text-softorange mt-8 mb-2 tracking-wide">
+          <a href="#">
+            Is VC Funding Drying Up?
+          </a>
+        </h2>
+        <p class="text-grayishblue text-lg pb-4 leading-9">
+          Private funding by VC firms is down 50% YOY. We take a look at what that means.
+        </p>
+      </div>
+      <!-- * End news section 1 -->
+    </div>
+    <!-- * End main section -->
+
+    <!-- * News section 2 -->
+    <div class="desktop:grid grid-flow-col grid-cols-3 gap-5">
+      <div class="grid grid-flow-col grid-cols-8 gap-7 pb-10">
+        <img src="/assets/images/image-retro-pcs.jpg" alt="" class="col-span-3 h-auto w-full">
+        <div class="col-span-5">
+          <h1 class="text-grayishblue text-4xl font-bold mb-4">
+            01
+          </h1>
+          <h2 class="font-extrabold text-2xl self-start mb-10">
+            <a href="#" class="hover:text-softred">
+              Reviving Retro PCs
+            </a>
+          </h2>
+          <p class="text-darkgrayishblue text-lg self-end leading-relaxed">
+            What happens when old PCs are given modern upgrades?
+          </p>
+        </div>
+      </div>
+      <div class="grid grid-flow-col grid-cols-8 gap-7 pb-10">
+        <img src="/assets/images/image-top-laptops.jpg" alt="" class="col-span-3 w-full h-auto">
+        <div class="col-span-5 ">
+          <h1 class="text-grayishblue text-4xl font-bold self-start mb-4">
+            02
+          </h1>
+          <h2 class="font-extrabold text-2xl mb-2">
+            <a href="#" class="hover:text-softred">
+              Top 10 Laptops of 2022
+            </a>
+          </h2>
+          <p class="text-darkgrayishblue text-lg leading-relaxed">
+            Our best picks for various needs and budgets.
+          </p>
+        </div>
+      </div>
+      <div class="grid grid-flow-col grid-cols-8 gap-7">
+        <img src="/assets/images/image-gaming-growth.jpg" alt="" class="col-span-3 w-full h-auto">
+        <div class="col-span-5">
+          <h1 class="text-grayishblue text-4xl font-bold mb-4">
+            03
+          </h1>
+          <h2 class="font-extrabold text-2xl mb-2">
+            <a href="#" class="hover:text-softred">
+              The Growth of Gaming
+            </a>
+          </h2>
+          <p class="text-darkgrayishblue text-lg leading-relaxed">
+            How the pandemic has sparked fresh opportunities.
+          </p>
+        </div>
+      </div>
+     </div> 
+      <!--* End news section 2  -->
+
+    <div class="align-center mt-6 pt-3 border-t-2 border-t-attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" class="text-attribution">Frontend Mentor</a>. 
+      Coded by <a href="https://github.com/osangayusuf" target="_blank" class="text-attribution">Osanga Yusuf</a>.
+    </div>
+  </div>
+  <!-- * End wrapping div -->
+
+  <!-- * Hamburger menu-->
+  <div id="menu" class="fixed top-0 left-0 w-full hidden h-screen origin-right duration-500">
+    <div id="overlay" class="absolute top-0 left-0 w-[35%] h-screen bg-darkgrayishblue opacity-50 origin-left duration-500">
+    </div>
+    <div id="hamburger" class="absolute top-0 right-0 w-[65%] h-screen bg-offwhite text-darkblue" >
+      <button class="absolute top-10 right-6" onclick="menuClose(this)">
+        <img src="/assets/images/icon-menu-close.svg" alt="" >
+      </button>
+      <ul class="list-none text-xl absolute top-96 left-7">
+        <li class="mb-8 tracking-loose"><a href="#"  class="hover:text-softred">Home</a></li>
+        <li class="mb-8 tracking-loose"><a href="#"  class="hover:text-softred">New</a></li>
+        <li class="mb-8 tracking-loose"><a href="#"  class="hover:text-softred">Popular</a></li>
+        <li class="mb-8 tracking-loose"><a href="#"  class="hover:text-softred">Trending</a></li>
+        <li class="mb-8 tracking-loose"><a href="#"  class="hover:text-softred">Categories</a></li>
+      </ul>
+    </div>
+  </div>
+    
+  <!-- * End hamburger menu-->
+
+  <!-- * Scripts -->
+  <script>
+    let hamburger = document.getElementById('hamburger');
+    let overlay = document.getElementById('overlay');
+    let menu = document.getElementById('menu');
+    console.log(hamburger);
+    function menuOpen() {
+      // hamburger.classList.remove('w-0');
+      // hamburger.classList.add('w-[65%]');
+      // overlay.classList.remove('w-0');
+      // overlay.classList.add('w-[35%]');
+      // console.log(hamburger);
+      menu.classList.remove('hidden');
+    }
+    
+    function menuClose() {
+      // hamburger.classList.remove('w-[65%]');
+      // hamburger.classList.add('w-0');
+      // overlay.classList.remove('w-[35%]');
+      // overlay.classList.add('w-0');
+      // console.log(hamburger);
+      menu.classList.add('hidden');
+    }
+  </script>
+  <!-- * End scripts -->
+</body>
+</html>
